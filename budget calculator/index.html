@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="budget.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Simple Budget App in Javascript</h1>
+    <div class="budget">
+        <div class="card1">
+            <h3 id="actionfield">Action fields</h3>
+            <p>Click the button below to update your wallet amount</p>
+            <input type="button" value="💵Update Wallet" id="updatewallet">
+            <p>Click the button below to Add Expense</p>
+            <input type="button" value="➕Add Expense" id="addexpense">
+        </div>
+        <div class="card2">
+            <div class="walletcard">
+                <div class="walletlogo">
+                    💵
+                </div>
+                <div class="forborder">
+                    <p>Wallet</p>
+                    <span>💲</span>
+                    <p id="walletamount">00</p>
+                </div>
+            </div>
+            <div class="expensecard">
+                <div class="expenselogo">
+                    📜
+                </div>
+                <div class="forborder">
+                    <p>Expenses</p>
+                    <span>💲</span>
+                    <p id="expenses">00</p>
+                </div>
+            </div>
+            <div class="balancecard">
+                <div class="balancelogo">
+                    ⚖️
+                </div>
+                <div class="forborder">
+                    <p>Balance</p>
+                    <span>💲</span>
+                    <p id="balance">00</p>
+                </div>
+            </div>
+        </div>
+        <div class="card3">
+            <h3 class="expenseslist">Expenses List</h3>
+            <div class="tab">
+                <table>
+                    <tbody id="tablebody"></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <script src="budget.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+*{
+    font-family: "Space Grotesk";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(37, 150, 190);
+}
+.card1{
+    width: 30dvw;
+    height: 30dvh;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px; 
+    margin: 10px;
+    line-height: 40px;
+    font-weight: bolder;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px 2px rgb(136, 134, 134);
+
+} 
+.card1 input{
+    width: 20rem;
+    height: 2rem;
+    font-size: 18px;
+}
+
+.card1 input:hover{
+    cursor: pointer;
+}
+#updatewallet{
+    color: orange;
+    border-color: orange;
+}
+#addexpense{
+    color: blue;
+    border-color: blue;
+}
+.walletlogo{
+    width: 150px;
+    text-align: center;
+    margin-top: 5px;
+    height: 50px;
+    font-size: 20px;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    padding-top: 8px;
+}
+.balancelogo{
+    width: 150px;
+    text-align: center;
+    margin-top: 5px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(54, 60, 38);
+    border-radius: 5px;
+    padding-top: 8px;
+}
+.expenselogo{
+    width: 150px;
+    text-align: center;
+    margin-top: 5px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(184, 36, 55);
+    padding-top: 8px;
+}
+.card2{
+    background-color: aliceblue;
+    width: 40dvw;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+    text-align: center;
+    place-items: center;
+    height: 50dvh;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(136, 134, 134);
+    font-weight: bolder;
+
+}
+.walletcard, .expensecard, .balancecard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(136, 134, 134);
+    width: 15dvw;
+    height: 20dvh;
+}
+.forborder{
+    border-top: 0.5px solid rgb(136, 134, 134);
+    width: 13dvw;
+    margin-top: 15px;
+}
+.expenseslist{
+    text-decoration: underline;
+    position: sticky;
+    top: 0;
+}
+.card3{
+    width: 30dvw;
+    height: 30dvh;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    line-height: 40px;
+    font-weight: bolder;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 1px .1px rgb(136, 134, 134);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.budget{
+    display: flex;
+    flex-shrink: calc(1, 2);
+}
+h1{
+    text-align: center;
+}
+table, tr{
+    width: 28dvw;
+    border: 0.5px solid rgb(223, 219, 219) ;
+    border-collapse: collapse;
+    
+}
+.editbtn, .deletebtn{
+    width: 40px;
+    height: 30px;
+    margin: 5px;
+    background-color: rgb(134, 151, 134);
+    border: none;
+}
+.editbtn, .deletebtn{
+    cursor: pointer;
+}
+td:nth-child(1){
+    width: 15dvw;
+    text-align: left;
+}
+td:nth-child(2){
+    text-align: right;
+}
+td{
+    width: 28dvw;
+}
+.tab{
+    background-color: aliceblue;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
